@@ -24,10 +24,10 @@ pip install pycryptodome
 ## Project Structure
 ```
 rsa-signature-tool/
-├── generate_keys.py       # Generate RSA key pair from entropy
-├── sign_file.py           # Digitally sign a file
-├── verify_signature.py    # Verify a signature
-├── seed.bin               # Entropy file (from TRNG or /dev/random)
+├── signature.py       # Generate RSA key pair from entropy
+├── sign.py           # Digitally sign a file
+├── verify.py    # Verify a signature
+├── seed.bin               # Entropy file
 ├── rsa_private.pem        # Generated private RSA key
 ├── rsa_public.pem         # Generated public RSA key
 ├── data.txt               # Example file to sign
