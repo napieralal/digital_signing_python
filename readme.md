@@ -2,9 +2,9 @@
 
 This project provides a minimal command-line toolkit for:
 
-- Generating deterministic RSA key pairs using custom entropy (e.g. from a TRNG)
-- Digitally signing files using RSA + SHA3-256
-- Verifying signatures using a public key
+-   Generating deterministic RSA key pairs using custom entropy (e.g. from a TRNG)
+-   Digitally signing files using RSA + SHA3-256
+-   Verifying signatures using a public key
 
 The project uses `pycryptodome` and is built for educational or cryptographic experiments.
 
@@ -12,15 +12,16 @@ The project uses `pycryptodome` and is built for educational or cryptographic ex
 
 ## 📦 Requirements
 
-- Python 3.7+
-- `pycryptodome` library
+-   Python 3.7+
+-   `pycryptodome` library
 
 Install dependencies:
 
 ```bash
 pip install pycryptodome
+```
 
-
+```
 rsa-signature-tool/
 ├── generate_keys.py       # Generate RSA key pair from entropy
 ├── sign_file.py           # Digitally sign a file
@@ -30,11 +31,16 @@ rsa-signature-tool/
 ├── rsa_public.pem         # Generated public RSA key
 ├── data.txt               # Example file to sign
 ├── signature.bin          # Output signature
+```
 
-
+```bash
 python generate_keys.py
+```
 
+```bash
 python sign_file.py
+```
 
+```bash
 python verify_signature.py
-
+```
