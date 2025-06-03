@@ -15,12 +15,13 @@ The project uses `pycryptodome` and is built for educational or cryptographic ex
 -   Python 3.7+
 -   `pycryptodome` library
 
-Install dependencies:
+## Install dependencies:
 
 ```bash
 pip install pycryptodome
 ```
 
+## Project Structure
 ```
 rsa-signature-tool/
 ├── generate_keys.py       # Generate RSA key pair from entropy
@@ -33,14 +34,17 @@ rsa-signature-tool/
 ├── signature.bin          # Output signature
 ```
 
+### Generate RSA Keys
 ```bash
 python generate_keys.py
 ```
 
+### Sign a file
 ```bash
 python sign_file.py
 ```
 
+### Verify a signature
 ```bash
 python verify_signature.py
 ```
